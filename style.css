@@ -1,0 +1,264 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #002929;
+    margin: 0px;
+}
+
+h1{
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px 0 20px;
+}
+#logo {
+    height: 150px;
+    width: 320px;
+    max-width: fit-content;
+}
+
+img{
+    height: 150px;
+    width: 320px;
+    }
+
+#nav {
+    text-decoration: none;
+    text-align: end;
+    list-style-type: none;
+    width: 50%;
+    color: white;
+}
+
+#nav a{
+    text-decoration: none;
+    float: right;
+    padding-top: 2em;
+    padding-left: 30px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+#background {
+    background-image: url("images/bg2.jpg");
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+    width: 100%; 
+    height: 600px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#background p{
+    margin: 25px;
+}
+
+#line1 {
+    font-family: Avenir;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    font-style: normal;
+}
+
+#line2 {
+    font-family: ProximaNova;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.main {
+    text-align: center;
+    
+}
+
+#dyn {
+    width: fit-content;
+    height: 25px;
+    background-color: rgb(234 179 8);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#dyn p{
+    margin: 1px;
+}
+#dyn a{
+    text-decoration: none;
+    color: black;
+    
+}
+#sm {
+    font-size: 30px;
+}
+
+/*------------------------------------------------*/
+
+.box {
+    
+    background-color: rgb(234 179 8);
+    margin: 1em;
+    box-sizing: border-box;
+    
+}
+
+#sec {
+
+    margin-top: 10em;
+}
+
+#box1 {
+    width: 50%;
+    height: 55em;
+    margin-left: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+
+}
+
+
+#about {
+    font-family: Avenir;
+    margin-right: 200px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+#para {
+    text-align: center;
+    font-size: 1em;
+    line-height: 2em;
+    width: 80%;
+    padding-left: 2em;
+}
+
+@media screen and (min-width: 500px) {
+    
+
+#box2 {
+    background-image: url("images/div_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    height: 46em;
+    position: absolute;
+    right: 10%;
+
+}
+}
+#cards {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    max-width: 288px;
+    max-height: fit-content;
+    background-color: rgb(234 179 8);
+    overflow: hidden;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_mrg {
+    margin: 1rem;
+    font-weight: 500;
+}
+
+.card_mrg span{
+    display: block;
+}
+.card img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*--------------------------------------------------*/
+footer {
+    width: 100%;
+    height: 25em;
+    background-color: rgb(234 179 8);
+    margin-top: 10rem;
+
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.foot_div{
+    font-family: ProximaNova;
+    font-size: x-large;
+    padding-top: 2em;
+    line-height: 45px;
+    padding-left: 2em;
+    padding-right: 2em;
+    width:22%;
+}
+#footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.heading {
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.foot_div:not(.heading) {
+    font-size: large;
+}
+
+#connect {
+    display: flex;
+    justify-content: space-around;   
+}
+
+#connect p{
+    margin: 3px;
+}
+
+#final {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#final hr{
+    width: 98%;
+    border-color: black;
+    background-color: black;
+    border: none;
+}
+
+@media screen and (max-width: 412px) {
+    #box2 {
+        background-image: url("images/div_bg.jpg");
+        background-size: cover;
+        background-position: center;
+        display: none;
+        width: 40%;
+        height: 46em;
+        position: absolute;
+        right: 10%;
+    
+    }
+    
+}
